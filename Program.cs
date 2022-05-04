@@ -306,29 +306,6 @@ namespace Zhegalkin
     {
         static void Main()
         {
-            var finTest3_1 = new StreamReader(@"C:\Users\tolya\source\repos\Zhegalkin\Test3(1).TXT");
-            var finTest3_2 = new StreamReader(@"C:\Users\tolya\source\repos\Zhegalkin\Test3(2).TXT");
-            var finTest1 = new StreamReader(@"C:\Users\tolya\source\repos\Zhegalkin\Test1.TXT");
-            var fout = new StreamWriter(@"C:\Users\tolya\source\repos\Zhegalkin\Result.TXT",false);
-            //Polynom pol = new Polynom();
-            //pol.CodeList(finTest1);
-            //var sortedPol = pol.SortDesc();
-            //sortedPol.DecodeList(fout);
-            //var threeVarPol = pol.BuildPolynomConsistsOfOnlyThreeVars();
-            //threeVarPol.DecodeList(fout);
-            //var invertedPol = pol.InvertVar(1);
-            //invertedPol.DecodeList(fout);
-
-            Polynom firstPol = new Polynom();
-            firstPol.CodeList(finTest3_1);
-            Polynom secondPol = new Polynom();
-            secondPol.CodeList(finTest3_2);
-            var sumOfTwoPol = Polynom.SumModule2(firstPol, secondPol);
-            sumOfTwoPol.DecodeList(fout);
-            finTest3_1.Close();
-            finTest3_2.Close();
-            finTest1.Close();
-            fout.Close();
         }
     }
 }
